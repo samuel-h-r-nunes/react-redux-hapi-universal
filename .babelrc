@@ -1,0 +1,34 @@
+{
+	"plugins": ["transform-object-rest-spread", "transform-react-jsx"],
+
+	// Enviroment differences:
+	// =======================
+	//
+	// * We use "transform-react-constant-elements" in production only, since
+	//   it's a performance optimization that makes debugging harder.
+	//
+	// * The "env" preset is always used, but it has to be configured for the
+	//   appropriate target:
+	//
+	//   - On the server side, we want to target "node" so that async/await can
+	//     work properly without unnecessary polyfills.
+	//
+	//   - On the client side, we simply target the last 2 browser versions.
+
+    "env": {
+		"production": {
+			"presets": [["env", { "targets": { "browsers": ["last 2 versions"] }}]],
+			"plugins": ["transform-react-constant-elements"]
+		},
+		"production-server": {
+			"presets": [["env", { "targets": { "node": "current" }}]],
+			"plugins": ["transform-react-constant-elements"]
+		},
+		"development": {
+			"presets": [["env", { "targets": { "browsers": ["last 2 versions"] }}]]
+		},
+		"development-server": {
+			"presets": [["env", { "targets": { "node": "current" }}]]
+		}
+    }
+}

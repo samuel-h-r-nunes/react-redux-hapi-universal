@@ -1,0 +1,30 @@
+{
+    "extends": "standard",
+    "plugins": ["varspacing", "esayemm"],
+	"rules":   {
+        // Indent with tabs
+        "indent":  ["error", "tab", { "SwitchCase": 1 }],
+        "no-tabs": 0,
+
+        // Aligment of key-value pairs
+        "key-spacing": ["error", {
+            "beforeColon": false,
+            "afterColon":  true,
+            "align":       "value"
+        }],
+
+        // Add exceptions to allow for alignment of variable declarations and
+        // module imports
+        "no-multi-spaces": ["error", { "exceptions": {
+            "VariableDeclarator": true,
+            "ImportDeclaration":  true
+        }}],
+
+        // Alignment of variable declarations
+        "varspacing/var-spacing": "error",
+
+        // Alignment and sorting of imports
+        "esayemm/align-imports": "error",
+        "esayemm/sort-imports":  "error"
+    }
+}
