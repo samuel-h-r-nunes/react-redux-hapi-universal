@@ -1,0 +1,76 @@
+{
+  "name": "react-redux-hapi-universal",
+  "version": "0.1.0",
+  "description": "An experimental boilerplate for universal apps with an API, SSR service, and web and mobile clients, all in one project.",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "react",
+    "redux",
+    "hapi",
+    "isomorphic",
+    "universal",
+    "multi-platform",
+    "native",
+    "web",
+    "webpack",
+    "babel",
+    "hot module reloading"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/samuel-h-r-nunes/react-redux-hapi-universal.git"
+  },
+  "bugs": {
+    "url": "https://github.com/samuel-h-r-nunes/react-redux-hapi-universal/issues"
+  },
+  "homepage": "https://github.com/samuel-h-r-nunes/react-redux-hapi-universal#readme",
+  "author": "Samuel Nunes <samuel.h.r.nunes@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "babel-core": "^6.26.0",
+    "babel-loader": "^7.1.2",
+    "babel-plugin-transform-object-rest-spread": "^6.26.0",
+    "babel-plugin-transform-react-constant-elements": "^6.23.0",
+    "babel-plugin-transform-react-jsx": "^6.24.1",
+    "babel-preset-env": "^1.6.0",
+    "chalk": "^2.1.0",
+    "cross-env": "^5.1.3",
+    "css-loader": "^0.28.7",
+    "eslint": "^4.14.0",
+    "eslint-config-standard": "^11.0.0-beta.0",
+    "eslint-plugin-esayemm": "0.0.7",
+    "eslint-plugin-import": "^2.8.0",
+    "eslint-plugin-node": "^5.2.1",
+    "eslint-plugin-promise": "^3.6.0",
+    "eslint-plugin-standard": "^3.0.1",
+    "eslint-plugin-varspacing": "^1.1.0",
+    "extract-text-webpack-plugin": "^3.0.2",
+    "file-loader": "^1.1.6",
+    "node-sass": "^4.7.2",
+    "nodemon": "^1.14.7",
+    "npm-run-all": "^4.1.1",
+    "rimraf": "^2.6.2",
+    "sass-loader": "^6.0.6",
+    "style-loader": "^0.19.1",
+    "webpack": "^3.10.0",
+    "webpack-dev-server": "^2.9.7",
+    "webpack-manifest-plugin": "^1.3.2",
+    "webpack-node-externals": "^1.6.0"
+  },
+  "dependencies": {
+    "h2o2": "^7.0.1",
+    "hapi": "^17.2.0",
+    "inert": "^5.0.1",
+    "isomorphic-fetch": "^2.2.1",
+    "prop-types": "^15.6.0",
+    "react": "^16.2.0",
+    "react-dom": "^16.2.0",
+    "react-redux": "^5.0.6",
+    "react-router-config": "^1.0.0-beta.4",
+    "react-router-dom": "^4.2.2",
+    "redux": "^3.7.2",
+    "redux-thunk": "^2.2.0"
+  }
+}
