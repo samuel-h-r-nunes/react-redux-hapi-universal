@@ -3,7 +3,10 @@
   "version": "0.1.0",
   "description": "An experimental boilerplate for universal apps with an API, SSR service, and web and mobile clients, all in one project.",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "clean": "rimraf \"build/*\" && rimraf \"build/.!(keep)\"",
+    "slate": "rimraf \"node_modules\" && npm install",
+    "lint": "eslint config src tools",
+    "test": "npm run lint && echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [
     "react",
@@ -44,6 +47,7 @@
     "eslint-plugin-import": "^2.8.0",
     "eslint-plugin-node": "^5.2.1",
     "eslint-plugin-promise": "^3.6.0",
+    "eslint-plugin-react": "^7.5.1",
     "eslint-plugin-standard": "^3.0.1",
     "eslint-plugin-varspacing": "^1.1.0",
     "extract-text-webpack-plugin": "^3.0.2",

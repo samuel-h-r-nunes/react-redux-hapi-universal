@@ -1,7 +1,17 @@
 {
-    "extends": "standard",
-    "plugins": ["varspacing", "esayemm"],
-	"rules":   {
+    "plugins": [
+        "react",
+        "varspacing",
+        "esayemm"
+    ],
+    "extends": [
+        "standard",
+        "plugin:react/recommended"
+    ],
+    "settings": {
+        "propWrapperFunctions": ["forbidExtraProps"]
+    },
+    "rules":   {
         // Indent with tabs
         "indent":  ["error", "tab", { "SwitchCase": 1 }],
         "no-tabs": 0,
