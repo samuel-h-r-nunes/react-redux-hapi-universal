@@ -1,0 +1,27 @@
+# Documentation: http://editorconfig.org
+
+# Top-most EditorConfig file
+root = true
+
+# All files: UTF-8 charset, unix-style newlines, etc.
+[*]
+charset = utf-8
+end_of_line = lf
+insert_final_newline = true
+trim_trailing_whitespace = true
+
+# 4 space indentation (almost) everywhere
+[*]
+indent_style = space
+indent_size = 4
+
+# Override indentation for package.json, since npm always regenerates this file
+# using 2 spaces indentation anyway
+[package.json]
+indent_size = 2
+
+# Don't enforce indentation for .md files, since this may vary e.g. with nested
+# lists that combine ordered and unordered lists.
+[*.md]
+indent_style = unset
+indent_size = unset
