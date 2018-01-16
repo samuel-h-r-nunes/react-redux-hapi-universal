@@ -28,7 +28,7 @@ const defaultConfiguration = {
 
 const configuration = Object.assign({}, defaultConfiguration)
 
-// Allow configuring the webserver's port directly, useful when deploying
+// Allow configuring the web server's port directly, useful when deploying
 // to external services.
 if (process.env.PORT) {
     configuration.webServer.port = process.env.PORT
